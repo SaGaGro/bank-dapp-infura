@@ -1,0 +1,22 @@
+{
+  "name": "bank-dapp-infura",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:contract": "node --env-file=.env scripts/deploy.mjs"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "ethers": "^6.17.0"
+  },
+  "devDependencies": {
+    "solc": "^0.8.38",
+    "vite": "^8.3.8"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}
